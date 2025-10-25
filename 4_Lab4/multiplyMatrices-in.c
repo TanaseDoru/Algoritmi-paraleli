@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include <math.h>
 
 int printLevel;
 int N;
@@ -10,6 +9,8 @@ int** a;
 int** b;
 int** c;
 
+pthread_mutex_t GPmutex = PTHREAD_MUTEX_INITIALIZER; 
+
 void* threadFunction(void *args)
 {
 	// TODO: Implement parallel multiply of matrices: C = A * B
@@ -17,6 +18,46 @@ void* threadFunction(void *args)
 
 	int thread_id = *(int*)args;
 
+	int** localC = (int**)calloc(N, sizeof(int*));
+	for(int i = 0 ; i < N; i ++)
+		localC[i] = (int*)calloc(N, sizeof(int));
+	
+	int chunk = N / P;	
+	int rest = N % P;
+	int startIndex = chunk * thread_id;
+	int endIndex = chunk * (thread_id + 1);
+	if (thread_id == P - 1)
+	{
+		endIndex += rest;
+	}
+
+	for(int i = 0; i < N; i++)
+	{
+		for(int j = 0; j < N; j++)
+		{
+			for(int k = startIndex; k < endIndex; k++)
+			{
+				localC[i][j] += a[i][k] * b[k][j];
+			}
+		}
+	}
+
+	pthread_mutex_lock(&GPmutex);
+	for(int i = 0; i < N; i++)
+	{
+		for(int j = 0; j < N; j++)
+		{
+			c[i][j] += localC[i][j];
+		}
+	}
+	pthread_mutex_unlock(&GPmutex);
+	
+
+	for(int i = 0; i < N; i++)
+	{
+		free(localC[i]);
+	}
+	free(localC);
 	/*
 	for(i = 0; i < N; i++) {
 		for(j = 0; j < N; j++) {
