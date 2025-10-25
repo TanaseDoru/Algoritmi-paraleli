@@ -4,6 +4,7 @@
 
 int printLevel;
 int N;
+int NReps;
 int** a;
 int** b;
 int** c;
@@ -24,6 +25,9 @@ int** AUXM62;
 int** M7;
 int** AUXM71;
 int** AUXM72;
+
+pthread_barrier_t GPbarrier;
+pthread_mutex_t GPmutex = PTHREAD_MUTEX_INITIALIZER;
 
 void getArgs(int argc, char **argv)
 {
@@ -165,42 +169,62 @@ void subMatrix(int** C, int startCi, int startCj,  int** A, int startAi, int sta
 			C[startCi + i][startCj + j] = A[startAi + i][startAj + j] - B[startBi + i][startBj + j];
 }
 
-int main(int argc, char *argv[])
+void* threadFunc_1(void* args)
 {
-	getArgs(argc, argv);
-	init();
-	
-	// TODO: Create a propper number of threads 
-	// (maybe using mutiple thread functions)
-	// to parallelize Strassen Matrix multiply.
-	
-	// Hint: In the C-Style comment bellow, you have 
-	// a correct serial implementation.
-/*
 	addMatrix(AUXM11, 0, 0, a, 0, 0, a, N/2, N/2);
 	addMatrix(AUXM12, 0, 0, b, 0, 0, b, N/2, N/2);
 	mulMatrix(M1, 0, 0, AUXM11, 0, 0, AUXM12, 0, 0);
-
+	pthread_barrier_wait(&GPbarrier);
+	return NULL;
+}
+void* threadFunc_2(void* args)
+{
 	addMatrix(AUXM21, 0,0, a, N/2, 0, a, N/2, N/2);
 	mulMatrix(M2, 0, 0, AUXM21, 0, 0, b, 0, 0);
-
+	pthread_barrier_wait(&GPbarrier);
+	return NULL;
+}
+void* threadFunc_3(void* args)
+{
 	subMatrix(AUXM31, 0, 0, b, 0, N/2, b, N/2, N/2);
 	mulMatrix(M3, 0, 0, a, 0, 0, AUXM31, 0, 0);
-
+	pthread_barrier_wait(&GPbarrier);
+	return NULL;
+}
+void* threadFunc_4(void* args)
+{
 	subMatrix(AUXM41, 0, 0, b, N/2, 0, b, 0, 0);
 	mulMatrix(M4, 0, 0, a, N/2, N/2, AUXM41, 0, 0);
-
+	pthread_barrier_wait(&GPbarrier);
+	return NULL;
+}
+void* threadFunc_5(void* args)
+{
 	addMatrix(AUXM51, 0,0, a, 0, 0, a, 0, N/2);
 	mulMatrix(M5, 0, 0, AUXM51, 0, 0, b, N/2, N/2);
-
+	pthread_barrier_wait(&GPbarrier);
+	return NULL;
+}
+void* threadFunc_6(void* args)
+{
 	subMatrix(AUXM61, 0, 0, a, N/2, 0, a, 0, 0);
 	addMatrix(AUXM62, 0, 0, b, 0, 0, b, 0, N/2);
 	mulMatrix(M6, 0, 0, AUXM61, 0, 0, AUXM62, 0, 0);
-
+	pthread_barrier_wait(&GPbarrier);
+	return NULL;
+}
+void* threadFunc_7(void* args)
+{
 	subMatrix(AUXM71, 0, 0, a, 0, N/2, a, N/2, N/2);
 	addMatrix(AUXM72, 0, 0, b, N/2, 0, b, N/2, N/2);
 	mulMatrix(M7, 0, 0, AUXM71, 0, 0, AUXM72, 0, 0);
-
+	pthread_barrier_wait(&GPbarrier);
+	return NULL;
+}
+void* threadFunc_8(void*args)
+{
+	pthread_barrier_wait(&GPbarrier);
+	
 	addMatrix(c, 0, 0, M1, 0, 0, M4, 0, 0);
 	subMatrix(c, 0, 0, c, 0, 0, M5, 0, 0);
 	addMatrix(c, 0, 0, c, 0, 0, M7, 0, 0);
@@ -212,7 +236,41 @@ int main(int argc, char *argv[])
 	subMatrix(c, N/2, N/2, M1, 0, 0, M2, 0, 0);
 	addMatrix(c, N/2, N/2, c, N/2, N/2, M3, 0, 0);
 	addMatrix(c, N/2, N/2, c, N/2, N/2, M6, 0, 0);
+	return NULL;
+}
+
+typedef void*(*pthreadFunc_t)(void*);
+
+int main(int argc, char *argv[])
+{
+	getArgs(argc, argv);
+	init();
+	int P = 8;	
+	pthread_barrier_init(&GPbarrier, NULL, P);
+	// TODO: Create a propper number of threads 
+	// (maybe using mutiple thread functions)
+	// to parallelize Strassen Matrix multiply.
+	
+	// Hint: In the C-Style comment bellow, you have 
+	// a correct serial implementation.
+/*
+
+
+
 */
+
+	pthread_t tids[P];
+	pthreadFunc_t functions[8] = {threadFunc_1, threadFunc_2,threadFunc_3,threadFunc_4,threadFunc_5,threadFunc_6,threadFunc_7, threadFunc_8};
+	
+	for(int i = 0 ; i < P; i++)
+	{
+		pthread_create(&(tids[i]), NULL, functions[i], NULL);
+	}
+	
+	for(int i = 0 ; i < P; i++)
+	{
+		pthread_join(tids[i], NULL);
+	}
 	print();
 
 	return 0;

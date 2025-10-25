@@ -83,4 +83,9 @@ Output correct on intensive test
 - P = 2: 9,7s
 - P = 4: 5,4s
 
- 
+# strassen
+Paraleliazare Strassen:
+  - Pentru a paraleliza matricea Strassen am folosit 8 thread-uri astfel:
+    - Primele 7 thread-uri calculeaza separat M1 - M7
+    - Thread-ul 8 asteapta sa se terminele celelalte 7 si dupa face adaugarile la matricea principala c
+Am folosit cate o bariera dupa ce se termina cele 7 thread-uri pentru a face o sincronizare 
