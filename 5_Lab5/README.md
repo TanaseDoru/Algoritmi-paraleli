@@ -1,3 +1,4 @@
+
 # Exercitiul 1
 Codul se afla in oets-par.c
 
@@ -154,3 +155,15 @@ Pentru N = 268435456:
 P = 1: 27,7s
 P = 2: 21,2s
 P = 4: 18,2s
+
+
+# Exercitiul 5 - Shear Sort
+## Timpi
+P = 1: 10,9s
+P = 2: 7,5s
+P = 4: 5,6s
+
+## Test Correctiveness
+
+
+
