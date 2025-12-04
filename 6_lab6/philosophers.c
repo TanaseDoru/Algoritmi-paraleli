@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include <math.h>
+#include <unistd.h>
 
 int N;
 int P;
@@ -28,7 +28,8 @@ void* phylosopherThread(void *var)
 
 	for (i = 0; i < N; i++) {
 			pthread_mutex_lock(&forkmutex[(thread_id + 1) % P]);
-            sleep(1); // THIS IS HERE TO MAKE SURE WE SEE THE DEAD-LOCK DO NOT REMOVE
+			printf("philosopher %i locked fork %i\n", thread_id, (thread_id + 1) % P);
+      sleep(1); // THIS IS HERE TO MAKE SURE WE SEE THE DEAD-LOCK DO NOT REMOVE
 			pthread_mutex_lock(&forkmutex[thread_id]);
 			// Here we are eating. 
 			//LEAVE PRINT COMMENTED WHEN TESTING WE CAN NOT GUARANTEE ORDER AND TEST WILL FAIL

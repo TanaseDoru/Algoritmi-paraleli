@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include <math.h>
 #include <semaphore.h>
 
 int N;
@@ -24,7 +23,7 @@ int * buffer;
 int BUFFER_SIZE=5;
 int get() {
 	//return buffer[0];
-}
+
 
 void put(int value) {
 	//buffer[0]=value;
