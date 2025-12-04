@@ -38,18 +38,15 @@ void compareVectors(int *a, int *b) {
 }
 
 /* display vector in the same style as your example */
-void displayVector(int *vec) {
+void displayVector(int *v) {
     int i;
-    int max_digits = 1;
+    int max = 1;
+    for (i = 0; i < N; i++)
+        if (v[i] > 0 && max < (int)log10(v[i]))
+            max = (int)log10(v[i]);
+    int displayWidth = 2 + max;
     for (i = 0; i < N; i++) {
-        if (vec[i] > 0) {
-            int digits = (int)log10((double)vec[i]) + 1;
-            if (digits > max_digits) max_digits = digits;
-        }
-    }
-    int displayWidth = 2 + max_digits;
-    for (i = 0; i < N; i++) {
-        printf("%*i", displayWidth, vec[i]);
+        printf("%*i", displayWidth, v[i]);
         if (!((i + 1) % 20))
             printf("\n");
     }
