@@ -16,3 +16,6 @@ C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex04\obj\Debug
 C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex04\obj\Debug\net6.0\ex04.pdb
 C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex04\obj\Debug\net6.0\ex04.genruntimeconfig.cache
 C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex04\obj\Debug\net6.0\ref\ex04.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex04\bin\Debug\net6.0\SixLabors.Fonts.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex04\bin\Debug\net6.0\SixLabors.ImageSharp.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex04\bin\Debug\net6.0\SixLabors.ImageSharp.Drawing.dll
