@@ -1,0 +1,261 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F713D228-7718-44DF-A2F8-7E75EAEF237B}|ex11\\ex11.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex11\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F713D228-7718-44DF-A2F8-7E75EAEF237B}|ex11\\ex11.csproj|solutionrelative:ex11\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFBBBCF0-D5AC-4565-8376-3900FA782FAC}|ex10\\ex10.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFBBBCF0-D5AC-4565-8376-3900FA782FAC}|ex10\\ex10.csproj|solutionrelative:ex10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F9B9879-16A0-4D7B-9376-BFD470BF488B}|ex09\\ex09.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex09\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F9B9879-16A0-4D7B-9376-BFD470BF488B}|ex09\\ex09.csproj|solutionrelative:ex09\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9D97B4D-F618-4D34-827B-66FE4F6B39B8}|ex08\\ex08.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex08\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9D97B4D-F618-4D34-827B-66FE4F6B39B8}|ex08\\ex08.csproj|solutionrelative:ex08\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4356E603-1EC0-4C3C-A7BC-AFF27A2B08DD}|ex07\\ex07.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex07\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4356E603-1EC0-4C3C-A7BC-AFF27A2B08DD}|ex07\\ex07.csproj|solutionrelative:ex07\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C25D385-45CB-4194-90D2-63F56D2B9F9D}|ex06\\ex06.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C25D385-45CB-4194-90D2-63F56D2B9F9D}|ex06\\ex06.csproj|solutionrelative:ex06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4FD36A7-7D95-4E69-9E92-A608C8955FAC}|ex05\\ex05.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4FD36A7-7D95-4E69-9E92-A608C8955FAC}|ex05\\ex05.csproj|solutionrelative:ex05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB807E8D-1643-48B8-BDB5-852AB109EBF7}|ex04\\ex04.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB807E8D-1643-48B8-BDB5-852AB109EBF7}|ex04\\ex04.csproj|solutionrelative:ex04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2D6C3D-7211-4F1F-8FCF-831D67B99044}|ex02\\ex02.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2D6C3D-7211-4F1F-8FCF-831D67B99044}|ex02\\ex02.csproj|solutionrelative:ex02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2D6C3D-7211-4F1F-8FCF-831D67B99044}|ex02\\ex02.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex02\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2D6C3D-7211-4F1F-8FCF-831D67B99044}|ex02\\ex02.csproj|solutionrelative:ex02\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2D6C3D-7211-4F1F-8FCF-831D67B99044}|ex02\\ex02.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex02\\productclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2D6C3D-7211-4F1F-8FCF-831D67B99044}|ex02\\ex02.csproj|solutionrelative:ex02\\productclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{608F1671-1F6F-4B57-8E98-40FA8AAED008}|ex03\\ex03.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex03\\productclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{608F1671-1F6F-4B57-8E98-40FA8AAED008}|ex03\\ex03.csproj|solutionrelative:ex03\\productclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{608F1671-1F6F-4B57-8E98-40FA8AAED008}|ex03\\ex03.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex03\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{608F1671-1F6F-4B57-8E98-40FA8AAED008}|ex03\\ex03.csproj|solutionrelative:ex03\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{608F1671-1F6F-4B57-8E98-40FA8AAED008}|ex03\\ex03.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{608F1671-1F6F-4B57-8E98-40FA8AAED008}|ex03\\ex03.csproj|solutionrelative:ex03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CF1CA85-0E95-4C15-8655-645326A3C255}|ex01\\ex01.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab11\\ex01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CF1CA85-0E95-4C15-8655-645326A3C255}|ex01\\ex01.csproj|solutionrelative:ex01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 477,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex11\\Program.cs",
+              "RelativeDocumentMoniker": "ex11\\Program.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex11\\Program.cs",
+              "RelativeToolTip": "ex11\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex10\\Program.cs",
+              "RelativeDocumentMoniker": "ex10\\Program.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex10\\Program.cs",
+              "RelativeToolTip": "ex10\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex09\\Program.cs",
+              "RelativeDocumentMoniker": "ex09\\Program.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex09\\Program.cs",
+              "RelativeToolTip": "ex09\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex08\\Program.cs",
+              "RelativeDocumentMoniker": "ex08\\Program.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex08\\Program.cs",
+              "RelativeToolTip": "ex08\\Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex07\\Program.cs",
+              "RelativeDocumentMoniker": "ex07\\Program.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex07\\Program.cs",
+              "RelativeToolTip": "ex07\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex06\\Program.cs",
+              "RelativeDocumentMoniker": "ex06\\Program.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex06\\Program.cs",
+              "RelativeToolTip": "ex06\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex05\\Program.cs",
+              "RelativeDocumentMoniker": "ex05\\Program.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex05\\Program.cs",
+              "RelativeToolTip": "ex05\\Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex04\\Program.cs",
+              "RelativeDocumentMoniker": "ex04\\Program.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex04\\Program.cs",
+              "RelativeToolTip": "ex04\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductClient.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex03\\ProductClient.cs",
+              "RelativeDocumentMoniker": "ex03\\ProductClient.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex03\\ProductClient.cs",
+              "RelativeToolTip": "ex03\\ProductClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex03\\Product.cs",
+              "RelativeDocumentMoniker": "ex03\\Product.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex03\\Product.cs",
+              "RelativeToolTip": "ex03\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex03\\Program.cs",
+              "RelativeDocumentMoniker": "ex03\\Program.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex03\\Program.cs",
+              "RelativeToolTip": "ex03\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductClient.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex02\\ProductClient.cs",
+              "RelativeDocumentMoniker": "ex02\\ProductClient.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex02\\ProductClient.cs",
+              "RelativeToolTip": "ex02\\ProductClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex02\\Product.cs",
+              "RelativeDocumentMoniker": "ex02\\Product.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex02\\Product.cs",
+              "RelativeToolTip": "ex02\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex02\\Program.cs",
+              "RelativeDocumentMoniker": "ex02\\Program.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex02\\Program.cs",
+              "RelativeToolTip": "ex02\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex01\\Program.cs",
+              "RelativeDocumentMoniker": "ex01\\Program.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex01\\Program.cs",
+              "RelativeToolTip": "ex01\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:45:20.598Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
