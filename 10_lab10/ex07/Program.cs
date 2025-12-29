@@ -2,71 +2,70 @@
 {
     internal class Program
     {
-        private static int NUM_OF_ITERATIONS = 50;
+        private const int NUM_OF_ITERATIONS = 50;
 
         static async Task Main(string[] args)
         {
-            Console.WriteLine("Press any key to terminate the program...");
+            Console.WriteLine("Astept primul task care termina...");
+
+            using var cts = new CancellationTokenSource();
+
+            var progress1 = new Progress<float>(p => Console.WriteLine($"DoWork_1_Async: {p}%"));
+            var progress2 = new Progress<float>(p => Console.WriteLine($"DoWork_2_Async: {p}%"));
+
+            Task<int> task1 = DoWork_1_Async(cts.Token, progress1);
+            Task<int> task2 = DoWork_2_Async(cts.Token, progress2);
+
+            Task<int> completedTask = await Task.WhenAny(task1, task2);
+
+            cts.Cancel();
+
+            int result = await completedTask;
+
+            Console.WriteLine($"\nPrimul task terminat a returnat rezultatul: {result}");
 
             try
             {
-                CancellationTokenSource cts = new CancellationTokenSource();
-
-                var progress_1 = new Progress<float>();
-                progress_1.ProgressChanged += (sender, percent) =>
-                {
-                    Console.WriteLine($"DoWork_1_Async: {percent}%");
-                };
-                DoWork_1_Async(cts.Token, progress_1);
-
-                var progress_2 = new Progress<float>();
-                progress_2.ProgressChanged += (sender, percent) =>
-                {
-                    Console.WriteLine($"DoWork_2_Async: {percent}%");
-                };
-                DoWork_2_Async(cts.Token, progress_2);
-
-                cts.CancelAfter(NUM_OF_ITERATIONS * 10 * 100);
-
-                // Which task has finished first?
-                Console.ReadKey();
+                await Task.WhenAll(task1, task2);
             }
-            catch (Exception)
+            catch (OperationCanceledException)
             {
-                throw;
             }
-
         }
 
-        static async Task<int> DoWork_1_Async(CancellationToken cancellationToken, IProgress<float> progress = null)
+        static async Task<int> DoWork_1_Async(CancellationToken cancellationToken, IProgress<float>? progress = null)
         {
             int result = 0;
             Random random = new Random();
 
             for (int i = 1; i <= NUM_OF_ITERATIONS; i++)
             {
-                progress?.Report((i * 100.0f) / NUM_OF_ITERATIONS);
-                await Task.Delay(random.Next(1, 20) * 100);
+                cancellationToken.ThrowIfCancellationRequested();
+
+                await Task.Delay(random.Next(1, 20) * 100, cancellationToken);
+
                 result += i;
 
-                cancellationToken.ThrowIfCancellationRequested();
+                progress?.Report((i * 100.0f) / NUM_OF_ITERATIONS);
             }
 
             return result;
         }
 
-        static async Task<int> DoWork_2_Async(CancellationToken cancellationToken, IProgress<float> progress = null)
+        static async Task<int> DoWork_2_Async(CancellationToken cancellationToken, IProgress<float>? progress = null)
         {
             int result = 0;
             Random random = new Random();
 
             for (int i = 1; i <= NUM_OF_ITERATIONS; i++)
             {
-                progress?.Report((i * 100.0f) / NUM_OF_ITERATIONS);
-                await Task.Delay(random.Next(1, 20) * 100);
+                cancellationToken.ThrowIfCancellationRequested();
+
+                await Task.Delay(random.Next(1, 20) * 100, cancellationToken);
+
                 result += i;
 
-                cancellationToken.ThrowIfCancellationRequested();
+                progress?.Report((i * 100.0f) / NUM_OF_ITERATIONS);
             }
 
             return result;

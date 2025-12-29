@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\10_lab10\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF20DFB6-4DA9-4E27-A83E-D2F922078F01}|ex02\\ex02.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\algoritmi-paraleli\\10_lab10\\ex02\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF20DFB6-4DA9-4E27-A83E-D2F922078F01}|ex02\\ex02.csproj|solutionrelative:ex02\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF20DFB6-4DA9-4E27-A83E-D2F922078F01}|ex02\\ex02.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\algoritmi-paraleli\\10_lab10\\ex02\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF20DFB6-4DA9-4E27-A83E-D2F922078F01}|ex02\\ex02.csproj|solutionrelative:ex02\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF20DFB6-4DA9-4E27-A83E-D2F922078F01}|ex02\\ex02.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\algoritmi-paraleli\\10_lab10\\ex02\\requester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF20DFB6-4DA9-4E27-A83E-D2F922078F01}|ex02\\ex02.csproj|solutionrelative:ex02\\requester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF20DFB6-4DA9-4E27-A83E-D2F922078F01}|ex02\\ex02.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\algoritmi-paraleli\\10_lab10\\ex02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF20DFB6-4DA9-4E27-A83E-D2F922078F01}|ex02\\ex02.csproj|solutionrelative:ex02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2EEF1DDC-5EB1-4674-9D56-E3E3F1BA2F23}|ex08\\ex08.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\algoritmi-paraleli\\10_lab10\\ex08\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EEF1DDC-5EB1-4674-9D56-E3E3F1BA2F23}|ex08\\ex08.csproj|solutionrelative:ex08\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ApiResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\10_lab10\\ex02\\ApiResponse.cs",
-              "RelativeDocumentMoniker": "ex02\\ApiResponse.cs",
-              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\10_lab10\\ex02\\ApiResponse.cs",
-              "RelativeToolTip": "ex02\\ApiResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T14:13:43.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Constants.cs",
-              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\10_lab10\\ex02\\Constants.cs",
-              "RelativeDocumentMoniker": "ex02\\Constants.cs",
-              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\10_lab10\\ex02\\Constants.cs",
-              "RelativeToolTip": "ex02\\Constants.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T14:13:40.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Requester.cs",
-              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\10_lab10\\ex02\\Requester.cs",
-              "RelativeDocumentMoniker": "ex02\\Requester.cs",
-              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\10_lab10\\ex02\\Requester.cs",
-              "RelativeToolTip": "ex02\\Requester.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T14:13:36.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\10_lab10\\ex02\\Program.cs",
-              "RelativeDocumentMoniker": "ex02\\Program.cs",
-              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\10_lab10\\ex02\\Program.cs",
-              "RelativeToolTip": "ex02\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\10_lab10\\ex08\\Program.cs",
+              "RelativeDocumentMoniker": "ex08\\Program.cs",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\10_lab10\\ex08\\Program.cs",
+              "RelativeToolTip": "ex08\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDwAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T14:12:36.701Z",
+              "WhenOpened": "2025-12-29T16:15:31.56Z",
               "EditorCaption": ""
             }
           ]

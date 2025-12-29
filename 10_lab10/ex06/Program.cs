@@ -10,24 +10,26 @@
 
             Task<string>[] tasks = new[] { task_1, task_2, task_3 };
 
-            foreach (var task in tasks)
+            while (tasks.Length > 0)
             {
-                var result = await task;
+                Task<string> completedTask = await Task.WhenAny(tasks);
+
+                string result = await completedTask;
                 Console.WriteLine(result);
+
+                tasks = tasks.Where(t => t != completedTask).ToArray();
             }
         }
 
         static async Task<string> DoSomeWorkAsync(int times)
         {
             string result = string.Empty;
-
             for (int i = 0; i < times; i++)
             {
                 await Task.Delay(100);
                 result += i;
             }
-
-            return result;
+            return $"Task cu {times} iteratii => {result}";
         }
     }
 }
