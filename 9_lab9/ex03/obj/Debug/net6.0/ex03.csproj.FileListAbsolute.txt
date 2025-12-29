@@ -1,0 +1,15 @@
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\bin\Debug\net6.0\ex03.exe
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\bin\Debug\net6.0\ex03.deps.json
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\bin\Debug\net6.0\ex03.runtimeconfig.json
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\bin\Debug\net6.0\ex03.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\bin\Debug\net6.0\ex03.pdb
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\obj\Debug\net6.0\ex03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\obj\Debug\net6.0\ex03.AssemblyInfoInputs.cache
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\obj\Debug\net6.0\ex03.AssemblyInfo.cs
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\obj\Debug\net6.0\ex03.csproj.CoreCompileInputs.cache
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\obj\Debug\net6.0\ex03.sourcelink.json
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\obj\Debug\net6.0\ex03.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\obj\Debug\net6.0\refint\ex03.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\obj\Debug\net6.0\ex03.pdb
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\obj\Debug\net6.0\ex03.genruntimeconfig.cache
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\9_lab9\ex03\obj\Debug\net6.0\ref\ex03.dll

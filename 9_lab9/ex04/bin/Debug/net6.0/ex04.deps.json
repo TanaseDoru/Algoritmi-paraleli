@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ex04/1.0.0": {
+        "dependencies": {
+          "System.Drawing.Common": "10.0.1"
+        },
+        "runtime": {
+          "ex04.dll": {}
+        }
+      },
+      "System.Drawing.Common/10.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.125.57005"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ex04/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Drawing.Common/10.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cmkIduwyVPfuO8kNehu3xNcjo26nMgUoJyfso9S/zTO85YovvPPG0/AFLjanx1iVgQ80OpJVnLb1jU3aIKNLdg==",
+      "path": "system.drawing.common/10.0.1",
+      "hashPath": "system.drawing.common.10.0.1.nupkg.sha512"
+    }
+  }
+}

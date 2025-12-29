@@ -6,28 +6,44 @@ namespace ex02
     {
         static void Main(string[] args)
         {
-            int numThreads = 2;
+            int numThreads = 8;
 
             string booksString = File.ReadAllText("booksLarge.txt");
             //string substring = "I need no medicine";//"This eBook is for the use of anyone anywhere";
-            string substring = @"Section 3. Information about the Project Gutenberg Literary
-Archive Foundation
+            string substring = @"Here again: Mr. Lorry’s inquiries into Miss Pross’s personal history had
+established the fact that her brother Solomon was a heartless scoundrel
+who had stripped her of everything she possessed, as a stake to
+speculate with, and had abandoned her in her poverty for evermore, with
+no touch of compunction. Miss Pross’s fidelity of belief in Solomon
+(deducting a mere trifle for this slight mistake) was quite a serious
+matter with Mr. Lorry, and had its weight in his good opinion of her.
 
-The Project Gutenberg Literary Archive Foundation is a non-profit
-501(c)(3) educational corporation organized under the laws of the
-state of Mississippi and granted tax exempt status by the Internal
-Revenue Service. The Foundation's EIN or federal tax identification
-number is 64-6221541. Contributions to the Project Gutenberg Literary
-Archive Foundation are tax deductible to the full extent permitted by
-U.S. federal laws and your state's laws.
+“As we happen to be alone for the moment, and are both people of
+business,” he said, when they had got back to the drawing-room and had
+sat down there in friendly relations, “let me ask you--does the Doctor,
+in talking with Lucie, never refer to the shoemaking time, yet?”
 
-The Foundation's business office is located at 809 North 1500 West,
-Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
-to date contact information can be found at the Foundation's website
-and official page at www.gutenberg.org/contact
+“Never.”
 
-Section 4. Information about Donations to the Project Gutenberg
-Literary Archive Foundation";
+“And yet keeps that bench and those tools beside him?”
+
+“Ah!” returned Miss Pross, shaking her head. “But I don’t say he don’t
+refer to it within himself.”
+
+“Do you believe that he thinks of it much?”
+
+“I do,” said Miss Pross.
+
+“Do you imagine--” Mr. Lorry had begun, when Miss Pross took him up
+short with:
+
+“Never imagine anything. Have no imagination at all.”
+
+“I stand corrected; do you suppose--you go so far as to suppose,
+sometimes?”
+
+“Now and then,” said Miss Pross.
+";
 
             CancellationTokenSource cts = new CancellationTokenSource();
             Thread[] threads = new Thread[numThreads];

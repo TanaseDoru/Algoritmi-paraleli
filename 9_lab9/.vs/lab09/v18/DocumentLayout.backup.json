@@ -1,17 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab09\\",
+  "WorkspaceRootPath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\9_lab9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{849EE0CC-2F0F-4E30-95A0-E9A1B6B5BF3E}|ex02\\ex02.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab09\\ex02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849EE0CC-2F0F-4E30-95A0-E9A1B6B5BF3E}|ex02\\ex02.csproj|solutionrelative:ex02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7AC8158-2157-4A9D-B093-89DE2640EE95}|ex01\\ex01.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab09\\ex01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AC8158-2157-4A9D-B093-89DE2640EE95}|ex01\\ex01.csproj|solutionrelative:ex01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14CFCE34-A2B0-416D-990E-B811E2AEB930}|ex04\\ex04.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\lab09\\ex04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14CFCE34-A2B0-416D-990E-B811E2AEB930}|ex04\\ex04.csproj|c:\\users\\tanase\\desktop\\dotnet projects\\algoritmi-paraleli\\9_lab9\\ex04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14CFCE34-A2B0-416D-990E-B811E2AEB930}|ex04\\ex04.csproj|solutionrelative:ex04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,38 +20,14 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab09\\ex02\\Program.cs",
-              "RelativeDocumentMoniker": "ex02\\Program.cs",
-              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab09\\ex02\\Program.cs*",
-              "RelativeToolTip": "ex02\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T06:01:20.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab09\\ex01\\Program.cs",
-              "RelativeDocumentMoniker": "ex01\\Program.cs",
-              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab09\\ex01\\Program.cs",
-              "RelativeToolTip": "ex01\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAUwCcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T05:31:22.242Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab09\\ex04\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\9_lab9\\ex04\\Program.cs",
               "RelativeDocumentMoniker": "ex04\\Program.cs",
-              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab09\\ex04\\Program.cs",
-              "RelativeToolTip": "ex04\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\9_lab9\\ex04\\Program.cs*",
+              "RelativeToolTip": "ex04\\Program.cs*",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAiwIsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T04:42:17.564Z"
+              "WhenOpened": "2025-12-29T11:56:13.236Z",
+              "EditorCaption": ""
             }
           ]
         }

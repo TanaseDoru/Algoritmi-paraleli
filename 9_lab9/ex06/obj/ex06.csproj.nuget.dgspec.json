@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab09\\ex06\\ex06.csproj": {}
+    "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\9_lab9\\ex06\\ex06.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab09\\ex06\\ex06.csproj": {
+    "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\9_lab9\\ex06\\ex06.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab09\\ex06\\ex06.csproj",
+        "projectUniqueName": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\9_lab9\\ex06\\ex06.csproj",
         "projectName": "ex06",
-        "projectPath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab09\\ex06\\ex06.csproj",
+        "projectPath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\9_lab9\\ex06\\ex06.csproj",
         "packagesPath": "C:\\Users\\Tanase\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab09\\ex06\\obj\\",
+        "outputPath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\9_lab9\\ex06\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tanase\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

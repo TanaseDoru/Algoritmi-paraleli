@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nod/+BnXPcU=",
+  "dgSpecHash": "ri+V1mayV0g=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab09\\ex02\\ex02.csproj",
+  "projectFilePath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\9_lab9\\ex02\\ex02.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tanase\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
     "C:\\Users\\Tanase\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
