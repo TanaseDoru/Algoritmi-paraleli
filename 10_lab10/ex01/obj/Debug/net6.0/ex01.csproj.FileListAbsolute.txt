@@ -1,0 +1,15 @@
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\bin\Debug\net6.0\ex01.exe
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\bin\Debug\net6.0\ex01.deps.json
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\bin\Debug\net6.0\ex01.runtimeconfig.json
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\bin\Debug\net6.0\ex01.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\bin\Debug\net6.0\ex01.pdb
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\obj\Debug\net6.0\ex01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\obj\Debug\net6.0\ex01.AssemblyInfoInputs.cache
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\obj\Debug\net6.0\ex01.AssemblyInfo.cs
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\obj\Debug\net6.0\ex01.csproj.CoreCompileInputs.cache
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\obj\Debug\net6.0\ex01.sourcelink.json
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\obj\Debug\net6.0\ex01.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\obj\Debug\net6.0\refint\ex01.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\obj\Debug\net6.0\ex01.pdb
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\obj\Debug\net6.0\ex01.genruntimeconfig.cache
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\10_lab10\ex01\obj\Debug\net6.0\ref\ex01.dll

@@ -29,7 +29,7 @@
 
             Console.WriteLine($"TID[{Thread.CurrentThread.ManagedThreadId}]");
 
-            //await task_1;
+            await task_1;
         }
     }
 }
