@@ -13,3 +13,18 @@ C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\refint\ex11.d
 C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\ex11.pdb
 C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\ex11.genruntimeconfig.cache
 C:\Me\Academie\2023-2024\AP\git\AP_NET\lab11\ex11\obj\Debug\net6.0\ref\ex11.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\bin\Debug\net6.0\ex11.exe
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\bin\Debug\net6.0\ex11.deps.json
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\bin\Debug\net6.0\ex11.runtimeconfig.json
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\bin\Debug\net6.0\ex11.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\bin\Debug\net6.0\ex11.pdb
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\obj\Debug\net6.0\ex11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\obj\Debug\net6.0\ex11.AssemblyInfoInputs.cache
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\obj\Debug\net6.0\ex11.AssemblyInfo.cs
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\obj\Debug\net6.0\ex11.csproj.CoreCompileInputs.cache
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\obj\Debug\net6.0\ex11.sourcelink.json
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\obj\Debug\net6.0\ex11.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\obj\Debug\net6.0\refint\ex11.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\obj\Debug\net6.0\ex11.pdb
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\obj\Debug\net6.0\ex11.genruntimeconfig.cache
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\11_lab11\ex11\obj\Debug\net6.0\ref\ex11.dll

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex05\\ex05.csproj",
+      "projectUniqueName": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\11_lab11\\ex05\\ex05.csproj",
       "projectName": "ex05",
-      "projectPath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex05\\ex05.csproj",
+      "projectPath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\11_lab11\\ex05\\ex05.csproj",
       "packagesPath": "C:\\Users\\Tanase\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\lab11\\ex05\\obj\\",
+      "outputPath": "C:\\Users\\Tanase\\Desktop\\DotNet Projects\\Algoritmi-paraleli\\11_lab11\\ex05\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tanase\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,7 +85,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -5,6 +5,8 @@
         static async Task Main(string[] args)
         {
             IAsyncEnumerable<int> numbersAsync = GetNumbersAsync();
+            Task otherWorkTask = Task.Run(() => DoOtherWork());
+
 
             await foreach (int number in numbersAsync)
             {
