@@ -1,45 +1,87 @@
-﻿using ex08.Services;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 using System.ServiceModel.Syndication;
+using ex08.Services;
+using ex08.Models;
 
 namespace ex08
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            IEnumerable<SyndicationItem> items_1 = RSSFeedService.GetFeedItems("https://devblogs.microsoft.com/dotnet/feed/");
-            IEnumerable<SyndicationItem> items_2 = RSSFeedService.GetFeedItems("https://www.microsoft.com/microsoft-365/blog/feed/");
-            IEnumerable<SyndicationItem> items_3 = RSSFeedService.GetFeedItems("https://feeds.feedburner.com/TechCrunch/");
-            IEnumerable<SyndicationItem> items_4 = RSSFeedService.GetFeedItems("https://www.wired.com/feed/rss");
+            // 1. Buffer comun pentru toate articolele
+            var buffer = new BufferBlock<Post>();
 
-            if(items_1?.Count() > 0)
+            // 2. ActionBlock care procesează articolele
+            var displayBlock = new ActionBlock<Post>(post =>
             {
-                foreach(SyndicationItem item in items_1)
+                Console.WriteLine($"[{post.Date}] {post.Title}");
+                if (post.Categories.Count > 0)
                 {
-                    Console.WriteLine(item.Title.Text.ToString());
+                    Console.WriteLine($"   Categories: {string.Join(", ", post.Categories)}");
                 }
-            }
-            if (items_2?.Count() > 0)
+                Console.WriteLine();
+            });
+
+            // Link cu propagare automată a finalizării
+            var linkOptions = new DataflowLinkOptions { PropagateCompletion = true };
+            buffer.LinkTo(displayBlock, linkOptions);
+
+            // 3. Lista cu URL-urile RSS
+            var feedUrls = new[]
             {
-                foreach (SyndicationItem item in items_2)
-                {
-                    Console.WriteLine(item.Title.Text.ToString());
-                }
-            }
-            if (items_3?.Count() > 0)
+                "https://devblogs.microsoft.com/dotnet/feed/",
+                "https://feeds.feedburner.com/TechCrunch/",
+                "https://www.microsoft.com/microsoft-365/blog/feed/",
+                "https://www.wired.com/feed/rss"
+            };
+
+            // 4. Sarcini pentru citirea paralelă a feed-urilor
+            var feedTasks = new List<Task>();
+
+            foreach (var url in feedUrls)
             {
-                foreach (SyndicationItem item in items_3)
+                feedTasks.Add(Task.Run(async () =>
                 {
-                    Console.WriteLine(item.Title.Text.ToString());
-                }
+                    try
+                    {
+                        var items = RSSFeedService.GetFeedItems(url);
+                        foreach (var item in items)
+                        {
+                            var post = new Post
+                            {
+                                Title = item.Title.Text,
+                                Date = item.PublishDate != DateTimeOffset.MinValue
+                                    ? item.PublishDate.ToString("yyyy-MM-dd HH:mm")
+                                    : item.LastUpdatedTime.ToString("yyyy-MM-dd HH:mm"),
+                                Categories = item.Categories?.Select(c => c.Name).ToList() ?? new List<string>(),
+                                Content = item.Summary?.Text
+                            };
+
+                            await buffer.SendAsync(post);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Eroare la citirea feed-ului {url}: {ex.Message}");
+                    }
+                }));
             }
-            if (items_4?.Count() > 0)
-            {
-                foreach (SyndicationItem item in items_4)
-                {
-                    Console.WriteLine(item.Title.Text.ToString());
-                }
-            }
+
+            // 5. Așteptăm toate feed-urile să termine
+            await Task.WhenAll(feedTasks);
+
+            // 6. Semnalăm că nu mai vin date
+            buffer.Complete();
+
+            // 7. Așteptăm procesarea finală
+            await displayBlock.Completion;
+
+            Console.WriteLine("Toate articolele au fost procesate.");
+            Console.ReadKey();
         }
     }
 }

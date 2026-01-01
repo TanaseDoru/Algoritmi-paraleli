@@ -1,0 +1,15 @@
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\bin\Debug\net6.0\ex07.exe
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\bin\Debug\net6.0\ex07.deps.json
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\bin\Debug\net6.0\ex07.runtimeconfig.json
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\bin\Debug\net6.0\ex07.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\bin\Debug\net6.0\ex07.pdb
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\obj\Debug\net6.0\ex07.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\obj\Debug\net6.0\ex07.AssemblyInfoInputs.cache
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\obj\Debug\net6.0\ex07.AssemblyInfo.cs
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\obj\Debug\net6.0\ex07.csproj.CoreCompileInputs.cache
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\obj\Debug\net6.0\ex07.sourcelink.json
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\obj\Debug\net6.0\ex07.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\obj\Debug\net6.0\refint\ex07.dll
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\obj\Debug\net6.0\ex07.pdb
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\obj\Debug\net6.0\ex07.genruntimeconfig.cache
+C:\Users\Tanase\Desktop\DotNet Projects\Algoritmi-paraleli\12_lab12\ex07\obj\Debug\net6.0\ref\ex07.dll

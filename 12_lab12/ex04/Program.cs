@@ -16,10 +16,17 @@ namespace ex04
                 await bufferBlock.SendAsync(i);
             }
             // Receiving items from the buffer block
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 20; i++)
             {
                 //int nr = bufferBlock.Receive(); // sync
-                int nr = await bufferBlock.ReceiveAsync(); // async
+                if (bufferBlock.TryReceive(out int nr))
+                {
+                    Console.WriteLine(nr);
+                }
+                else
+                {
+                    break;
+                }
             }
 
             /// 1.2. BroadcastBlock<T>
@@ -27,7 +34,7 @@ namespace ex04
 
             // Post an item to the broadcast block
             broadcastBlock.Post("Low battery!");
-            //broadcastBlock.Post("Battery sufficiently charged!");
+            broadcastBlock.Post("Battery sufficiently charged!");
 
             // Receive the item (multiple times) from the broadcast block
             for (int i = 0; i < 10; i++)
@@ -40,7 +47,7 @@ namespace ex04
 
             // Post an item to the write-once block
             await writeOnceBlock.SendAsync(5);
-            //await writeOnceBlock.SendAsync(6);
+            await writeOnceBlock.SendAsync(6);
 
             // Receive the item from the write-once block
             Console.WriteLine(await writeOnceBlock.ReceiveAsync());

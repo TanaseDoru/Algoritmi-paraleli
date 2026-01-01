@@ -66,7 +66,7 @@ namespace ex05
             await transformManyBlock.SendAsync(0);
             await transformManyBlock.SendAsync(10020);
             await transformManyBlock.SendAsync(123);
-            //await transformManyBlock.SendAsync(-1234);
+            await transformManyBlock.SendAsync(-1234);
 
             // Receive items from the transform many block
             for (int i = 0; i < 6; i++)
@@ -93,12 +93,16 @@ namespace ex05
                 Console.Write(" ");
             }
             Console.WriteLine();
-            //for (int i = 0; i < 4; i++)
-            //{
-            //    Console.Write(transformManyBlock.Receive());
-            //    Console.Write(" ");
-            //}
-            //Console.WriteLine();
+            transformManyBlock.Complete();
+            await transformManyBlock.Completion; 
+
+            while (transformManyBlock.TryReceive(out int digit))
+            {
+                Console.Write(digit);
+                Console.Write(" ");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
         }
     }
 }

@@ -89,6 +89,30 @@ namespace ex06
             Console.WriteLine();
 
             /// 3.3. BatchedJoinBlock<T1, T2>
+            JoinBlock<string, int> joinBlockForBatch = new JoinBlock<string, int>();
+            BatchBlock<Tuple<string, int>> batchBlockForPairs = new BatchBlock<Tuple<string, int>>(3);
+            joinBlockForBatch.LinkTo(batchBlockForPairs);
+
+            for (int i = 0; i < cars.Length; i++)
+            {
+                await joinBlockForBatch.Target1.SendAsync(cars[i]);
+                await joinBlockForBatch.Target2.SendAsync(prices[i]);
+            }
+
+            joinBlockForBatch.Complete();
+            await joinBlockForBatch.Completion;
+
+            batchBlockForPairs.Complete();
+
+            int batchNum = 1;
+            while (batchBlockForPairs.TryReceive(out var grp))
+            {
+                Console.WriteLine($"Batch {batchNum}:");
+                Tuple<string, int> minPair = grp.OrderBy(p => p.Item2).First();
+                Console.WriteLine($"  Cheapest car: {minPair.Item1} - {minPair.Item2}$");
+                batchNum++;
+            }
         }
+        
     }
 }

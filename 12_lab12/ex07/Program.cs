@@ -1,89 +1,89 @@
-﻿using System.Threading.Tasks.Dataflow;
+﻿using System;
+using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 
 namespace ex07
 {
+
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             // Sources
-            BufferBlock<Wood> sourceWood = new BufferBlock<Wood>();
-            BufferBlock<Stone> sourceStone = new BufferBlock<Stone>();
-            BufferBlock<Iron> sourceIron = new BufferBlock<Iron>();
+            var sourceWood = new BufferBlock<Wood>();
+            var sourceStone = new BufferBlock<Stone>();
+            var sourceIron = new BufferBlock<Iron>();
 
-            // Joins
-            JoinBlock<Wood, Stone> joinWoodStoneBlock = new JoinBlock<Wood, Stone>
-            (
-                new GroupingDataflowBlockOptions
-                {
-                    Greedy = true
-                }
-            );
-            JoinBlock<Wood, Iron> joinWoodIronBlock = new JoinBlock<Wood, Iron>
-            (
-                new GroupingDataflowBlockOptions
-                {
-                    Greedy = true
-                }
-            );
+            // Join blocks - 
+            var joinWoodStone = new JoinBlock<Wood, Stone>(new GroupingDataflowBlockOptions { Greedy = false });
+            var joinWoodIron = new JoinBlock<Wood, Iron>(new GroupingDataflowBlockOptions { Greedy = false });
 
-            // Actions
-            ActionBlock<Tuple<Wood, Stone>> actionWoodStone = new ActionBlock<Tuple<Wood, Stone>>
-            (
-                async resource =>
-                {
-                    for (int i = 0; i < 10; i++)
-                    {
-                        await Task.Delay(100);
-                        Console.WriteLine($"Wood + Stone {i + 1}/10");
-                    }
-                }
-            );
-            ActionBlock<Tuple<Wood, Iron>> actionWoodIron = new ActionBlock<Tuple<Wood, Iron>>
-            (
-                async resource =>
-                {
-                    for (int i = 0; i < 10; i++)
-                    {
-                        await Task.Delay(100);
-                        Console.WriteLine($"Wood + Iron {i + 1}/10");
-                    }
-                }
-            );
-
-            // Link sources to join blocks
-            sourceWood.LinkTo(joinWoodStoneBlock.Target1);
-            sourceWood.LinkTo(joinWoodIronBlock.Target1);
-            sourceStone.LinkTo(joinWoodStoneBlock.Target2);
-            sourceIron.LinkTo(joinWoodIronBlock.Target2);
-
-            // Link join blocks to action blocks
-            joinWoodStoneBlock.LinkTo(actionWoodStone);
-            joinWoodIronBlock.LinkTo(actionWoodIron);
-
-            Random random = new Random();
-
-            // Feed data into sources
-            for (int i = 0; i < 10; i++)
+            // Action blocks
+            var actionWoodStone = new ActionBlock<Tuple<Wood, Stone>>(async _ =>
             {
-                Task.Run(async () =>
+                for (int i = 0; i < 10; i++)
                 {
-                    await Task.Delay(random.Next(1, 10) * 100);
+                    await Task.Delay(100);
+                    Console.WriteLine($"Wood + Stone {i + 1}/10");
+                }
+            });
+
+            var actionWoodIron = new ActionBlock<Tuple<Wood, Iron>>(async _ =>
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    await Task.Delay(100);
+                    Console.WriteLine($"Wood + Iron {i + 1}/10");
+                }
+            });
+
+            // Link-uri cu PropagateCompletion = true
+            var linkOptions = new DataflowLinkOptions { PropagateCompletion = true };
+
+            sourceWood.LinkTo(joinWoodStone.Target1, linkOptions);
+            sourceWood.LinkTo(joinWoodIron.Target1, linkOptions);
+            sourceStone.LinkTo(joinWoodStone.Target2, linkOptions);
+            sourceIron.LinkTo(joinWoodIron.Target2, linkOptions);
+
+            joinWoodStone.LinkTo(actionWoodStone, linkOptions);
+            joinWoodIron.LinkTo(actionWoodIron, linkOptions);
+
+            var random = new Random();
+            var producerTasks = new Task[30]; // 10 x 3
+
+            for (int i = 0, idx = 0; i < 10; i++)
+            {
+                producerTasks[idx++] = Task.Run(async () =>
+                {
+                    await Task.Delay(random.Next(50, 300));
+                    sourceWood.Post(new Wood());
+                });
+
+                producerTasks[idx++] = Task.Run(async () =>
+                {
+                    await Task.Delay(random.Next(50, 300));
                     sourceStone.Post(new Stone());
                 });
-                Task.Run(async () =>
+
+                producerTasks[idx++] = Task.Run(async () =>
                 {
-                    await Task.Delay(random.Next(1, 10) * 100);
+                    await Task.Delay(random.Next(50, 300));
                     sourceIron.Post(new Iron());
-                });
-                Task.Run(async () =>
-                {
-                    await Task.Delay(random.Next(1, 10) * 100);
-                    sourceWood.Post(new Wood());
                 });
             }
 
-            Console.ReadKey();
+            // Așteptăm producătorii
+            await Task.WhenAll(producerTasks);
+
+            // Semnalăm finalul surselor
+            sourceWood.Complete();
+            sourceStone.Complete();
+            sourceIron.Complete();
+
+            // Așteptăm finalizarea acțiunilor
+            await Task.WhenAll(actionWoodStone.Completion, actionWoodIron.Completion);
+
+            Console.WriteLine("Procesare finalizată.");
         }
     }
 }

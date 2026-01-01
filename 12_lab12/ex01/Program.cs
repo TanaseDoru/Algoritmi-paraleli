@@ -14,15 +14,15 @@
                         {
                             Thread.Sleep(2000);
                             Console.WriteLine("Child task has finished!");
-                        }
-                        //TaskCreationOptions.AttachedToParent
+                        },
+                        TaskCreationOptions.AttachedToParent
                     );
                     childTask.Start();
 
                     Console.WriteLine("Parent task has finished!");
                 },
                 CancellationToken.None,
-                TaskCreationOptions.None,
+                TaskCreationOptions.DenyChildAttach,
                 TaskScheduler.Current
             );
 
