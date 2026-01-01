@@ -1,15 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <pthread.h>
 #include <semaphore.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int N;
 int P;
 int printLevel;
 
-void getArgs(int argc, char **argv)
+void getArgs(int argc, char** argv)
 {
-	if(argc < 4) {
+	if (argc < 4) {
 		printf("Not enough paramters: ./program N printLevel P\nprintLevel: 0=no, 1=some, 2=verbouse\n");
 		exit(1);
 	}
@@ -18,19 +18,54 @@ void getArgs(int argc, char **argv)
 	P = atoi(argv[3]);
 }
 
-//THIS IS WHERE YOU HAVE TO IMPLEMENT YOUR SOLUTION
-int * buffer;
-int BUFFER_SIZE=5;
-int get() {
-	//return buffer[0];
+// THIS IS WHERE YOU HAVE TO IMPLEMENT YOUR SOLUTION
+int* buffer;
+int BUFFER_SIZE = 5;
+int buffIndex;
 
+sem_t empty;
+sem_t full;
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER; 
 
-void put(int value) {
-	//buffer[0]=value;
+void init_sync()
+{
+	sem_init(&empty, 0, BUFFER_SIZE);
+	sem_init(&full, 0, 0);
 }
-//END THIS IS WHERE YOU HAVE TO IMPLEMENT YOUR SOLUTION
 
-void* consumerThread(void *var)
+int get()
+{
+    sem_wait(&full);
+    
+    pthread_mutex_lock(&mutex);
+
+    int value = buffer[buffIndex];
+    buffIndex = (buffIndex + 1) % BUFFER_SIZE; 
+
+    pthread_mutex_unlock(&mutex);
+    
+    sem_post(&empty);
+
+    return value;
+}
+
+void put(int value)
+{
+    sem_wait(&empty);
+    
+    pthread_mutex_lock(&mutex);
+
+    static int writeIndex = 0; 
+    buffer[writeIndex] = value;
+    writeIndex = (writeIndex + 1) % BUFFER_SIZE;
+
+    pthread_mutex_unlock(&mutex);
+
+    sem_post(&full);
+}
+// END THIS IS WHERE YOU HAVE TO IMPLEMENT YOUR SOLUTION
+
+void* consumerThread(void* var)
 {
 	int i;
 
@@ -46,7 +81,7 @@ void* consumerThread(void *var)
 	return NULL;
 }
 
-void* producerThread(void *var)
+void* producerThread(void* var)
 {
 	int i;
 
@@ -57,24 +92,26 @@ void* producerThread(void *var)
 	return NULL;
 }
 
-int main(int argc, char **argv)
+int main(int argc, char** argv)
 {
 	getArgs(argc, argv);
 
 	int i;
-	int NPROD=1;
-	int NCONS=1;
-	pthread_t tid[NPROD+NCONS];
-    buffer = malloc(BUFFER_SIZE * sizeof(int));
+	int NPROD = 1;
+	int NCONS = 1;
+	pthread_t tid[NPROD + NCONS];
+	buffer = malloc(BUFFER_SIZE * sizeof(int));
 
-	for(i = 0; i < NPROD; i++) {
+	init_sync();
+
+	for (i = 0; i < NPROD; i++) {
 		pthread_create(&(tid[i]), NULL, producerThread, NULL);
 	}
-	for(; i < NPROD+NCONS; i++) {
+	for (; i < NPROD + NCONS; i++) {
 		pthread_create(&(tid[i]), NULL, consumerThread, NULL);
 	}
 
-	for(i = 0; i < NPROD+NCONS; i++) {
+	for (i = 0; i < NPROD + NCONS; i++) {
 		pthread_join(tid[i], NULL);
 	}
 

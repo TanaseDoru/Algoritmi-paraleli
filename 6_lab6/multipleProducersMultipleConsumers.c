@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include <math.h>
 #include <semaphore.h>
 
 int N;
@@ -28,12 +27,36 @@ void getArgs(int argc, char **argv)
 //THIS IS WHERE YOU HAVE TO IMPLEMENT YOUR SOLUTION
 int * buffer;
 int BUFFER_SIZE=5;
+int in = 0;  // index pentru producător
+int out = 0; // index pentru consumator
+
+sem_t empty;  // numărul de sloturi libere
+sem_t full;   // numărul de elemente în buffer
+pthread_mutex_t mutexProd = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t mutexCons = PTHREAD_MUTEX_INITIALIZER;
+
 int get() {
-	return buffer[0];
+    sem_wait(&full);  // așteaptă să existe cel puțin un element
+    pthread_mutex_lock(&mutexCons);
+    
+    int value = buffer[out];
+    out = (out + 1) % BUFFER_SIZE;
+    
+    pthread_mutex_unlock(&mutexCons);
+    sem_post(&empty);  // semnalează că s-a eliberat un slot
+    
+    return value;
 }
 
 void put(int value) {
-	buffer[0]=value;
+    sem_wait(&empty);  // așteaptă să existe cel puțin un slot liber
+    pthread_mutex_lock(&mutexProd);
+    
+    buffer[in] = value;
+    in = (in + 1) % BUFFER_SIZE;
+    
+    pthread_mutex_unlock(&mutexProd);
+    sem_post(&full);  // semnalează că s-a adăugat un element
 }
 //END THIS IS WHERE YOU HAVE TO IMPLEMENT YOUR SOLUTION
 
@@ -73,7 +96,8 @@ int main(int argc, char **argv)
 	rezults = malloc(N * sizeof(int));
 	
     //HERE YOU CAN INIT DECLARE SEMAPHORES
-	
+	sem_init(&empty, 0, BUFFER_SIZE);  // inițial toate sloturile sunt libere
+	sem_init(&full, 0, 0);              // inițial nu există elemente în buffer
 	for(i = 0; i < NPROD; i++) {
 		pthread_create(&(tid[i]), NULL, producerThread, NULL);
 	}

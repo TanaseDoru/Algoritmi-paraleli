@@ -14,8 +14,7 @@ fi
 
 base_name="${src_file:r}"
 echo "Compiling $src_file..."
-gcc -lrt -lm -lpthread -Wall "$src_file"  -o "$base_name"
-
+gcc -lrt  "$src_file"  -o "$base_name" -lpthread -Wall  -lm
 # Check for success
 if [[ $? -eq 0 ]]; then
     echo "Compilation successful!"
